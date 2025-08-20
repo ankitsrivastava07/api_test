@@ -1,8 +1,12 @@
 package test.service;
 
+import org.springframework.stereotype.Service;
 import test.dto.RequestDto;
 
 import java.util.Map;
-public interface ApiTestService {
+
+@Service
+public interface IntegrationService {
+
     Map callExternalApi(RequestDto requestDto);
 }
